@@ -1,0 +1,7 @@
+BOT_TOKEN='OTg5NDAwNzc5OTc2NzQ5MDg2.GcA0sZ.qDMhAjFp7yptugNp_GVoBT8ZrIsnjEmu77JLE0'
+CLIENT_ID='989391095228162048'
+curl -X POST \
+-H 'Content-Type: application/json' \
+-H "Authorization: Bot $BOT_TOKEN" \
+-d '{"name":"hello","description":"Greet a person","options":[{"name":"name","description":"The name of the person","type":3,"required":true}]}' \
+"https://discord.com/api/v8/applications/$CLIENT_ID/commands"
